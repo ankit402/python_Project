@@ -1,0 +1,11 @@
+
+ <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: block;">
+               {% csrf_token %}
+            </form>
+<script>
+                function logout() {
+                    var form = document.getElementById('logout-form');
+                    alert('dfd');
+                    form.submit();
+                }
+             </script>
